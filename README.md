@@ -32,6 +32,7 @@ Hệ thống này là kết quả của nghiên cứu đã được xuất bản
 | **Dữ liệu** | `Ontology (.owl)`     | Cơ sở tri thức về nhạc cụ truyền thống Việt Nam. |
 
 ## 📁 Cấu trúc thư mục
+```
 web/
 ├── app.py                      # Logic chính của ứng dụng Flask và các routes API
 ├── utils.py                    # Các hàm tiện ích (nhận diện, truy vấn ontology)
@@ -56,7 +57,7 @@ web/
 │   └── ontology/
 │       └── nhaccu.owl          # File Ontology chứa thông tin nhạc cụ
 └── README.md                   # File này
-
+```
 ## 🛠️ Cài đặt và chạy dự án
 
 Để triển khai và chạy dự án này trên máy cục bộ của bạn, vui lòng làm theo các bước dưới đây:
@@ -115,10 +116,10 @@ python app.py
 Ứng dụng sẽ bắt đầu chạy trên http://127.0.0.1:5000/. Mở trình duyệt và truy cập địa chỉ này để bắt đầu sử dụng hệ thống.
 
 ## ✍️ Hướng dẫn sử dụng
-Truy cập ứng dụng: Mở trình duyệt và truy cập http://127.0.0.1:5000/.
-Tải ảnh lên: Nhấp vào nút "Chọn ảnh" và chọn một hình ảnh chứa nhạc cụ truyền thống Việt Nam.
-Nhận diện: Nhấn nút "Tải lên & Nhận diện". Hệ thống sẽ xử lý và hiển thị kết quả.
-Khám phá kết quả:
+* **Truy cập ứng dụng:** Mở trình duyệt và truy cập http://127.0.0.1:5000/.
+* **Tải ảnh lên:** Nhấp vào nút "Chọn ảnh" và chọn một hình ảnh chứa nhạc cụ truyền thống Việt Nam.
+* **Nhận diện:** Nhấn nút "Tải lên & Nhận diện". Hệ thống sẽ xử lý và hiển thị kết quả.
+* **Khám phá kết quả:**
 Xem ảnh đã được nhận diện với các hộp giới hạn và tên nhạc cụ.
 Đọc thông tin chi tiết về nhạc cụ từ Ontology.
 Tương tác với mô hình 3D (nếu có): dùng chuột để xoay, kéo, và cuộn để phóng to/thu nhỏ.
@@ -134,9 +135,9 @@ Xem các video liên quan để hiểu sâu hơn về nhạc cụ và các loạ
 
 ## ⚙️ Tùy chỉnh & Phát triển
 
-Mở rộng nhạc cụ: Huấn luyện thêm các mô hình ML với dữ liệu mới, cập nhật Ontology và thêm các mô hình 3D tương ứng.
-Cải thiện UI/UX: Tùy chỉnh file index.html và CSS để nâng cao trải nghiệm người dùng.
-Tối ưu hóa hiệu suất: Sử dụng các công cụ như gltf-pipeline để nén và tối ưu hóa các mô hình 3D.
+* **Mở rộng nhạc cụ:** Huấn luyện thêm các mô hình ML với dữ liệu mới, cập nhật Ontology và thêm các mô hình 3D tương ứng.
+* **Cải thiện UI/UX:** Tùy chỉnh file index.html và CSS để nâng cao trải nghiệm người dùng.
+* **Tối ưu hóa hiệu suất:** Sử dụng các công cụ như gltf-pipeline để nén và tối ưu hóa các mô hình 3D.
 
 ## 🤝 Đóng góp
 
