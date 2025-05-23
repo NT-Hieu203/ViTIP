@@ -1,0 +1,200 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.upload-section {
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px dashed #a8dadc;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f1f8f7;
+}
+.upload-section input[type="file"] {
+    display: none;
+}
+.upload-section label {
+    background-color: #457b9d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+.upload-section label:hover {
+    background-color: #1d3557;
+}
+.upload-section button {
+    background-color: #e63946;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+.upload-section button:hover {
+    background-color: #a82e38;
+}
+#fileName {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+    color: #457b9d;
+    display: none;
+}
+.error-message {
+    color: #e63946;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none;
+}
+.results-section {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.instrument-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    min-width: 300px; /* Kích thước tối thiểu */
+    flex-grow: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instrument-card h3 {
+    color: #1d3557;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: capitalize; /* Chữ cái đầu mỗi từ viết hoa */
+}
+
+.detected-image {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+/* 3D Model styles */
+.model3d-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.model3d {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+/* THÊM ĐOẠN CSS NÀY */
+.model3d canvas {
+    display: block; /* Loại bỏ khoảng trắng dư thừa dưới canvas */
+    width: 100% !important; /* Đảm bảo canvas chiếm toàn bộ chiều rộng của div cha */
+    height: 100% !important; /* Đảm bảo canvas chiếm toàn bộ chiều cao của div cha */
+}
+.ontology-infor, .ontology-video-section {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.ontology-infor p, .ontology-video-section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.ontology-infor ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.ontology-infor li {
+    margin-bottom: 5px;
+}
+.ontology-infor b, .ontology-video-item b {
+    color: #457b9d;
+}
+.ontology-video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+.ontology-video-item {
+    background-color: #e0f2f7;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #cce7ee;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.video-container iframe {
+    width: 100%;
+    max-width: 280px;
+    height: 135px;
+    border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .instrument-card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 600px) {
+    .instrument-card {
+        width: 100%;
+    }
+}

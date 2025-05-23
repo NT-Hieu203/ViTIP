@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống nhận diện nhạc cụ truyền thống Việt Nam</title>
+    <script type="module">
+        // Import Three.js và các module từ CDN
+        window.THREE = await import("https://cdn.skypack.dev/three@0.129.0/build/three.module.js");
+        window.OrbitControls = (await import("https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js")).OrbitControls;
+        window.GLTFLoader = (await import("https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js")).GLTFLoader;
+    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>ViTIP: AI-Powered Vietnamese Traditional Instrument Preservation System Using 3D Space</h1>
+        <h3>ViTIP: VITIP: Hệ thống bảo tồn nhạc cụ truyền thống Việt Nam ứng dụng AI và không gian 3D</h3>
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput">Chọn ảnh</label>
+            <button id="uploadButton">Tải lên & Nhận diện</button>
+            <p id="fileName">Chưa có ảnh được chọn.</p>
+            <div class="loading" id="loadingMessage">Đang xử lý ảnh... Vui lòng chờ.</div>
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+
+
+        <div class="results-section" id="resultsSection">
+            <h2 id="resultsHeading" style="display: none;">Kết quả nhận diện và thông tin chi tiết</h2>
+            <p id="noResultsMessage">Chọn ảnh để bắt đầu nhận diện.</p>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='display3Dmodel.js') }}"></script>
+</body>
+</html>
