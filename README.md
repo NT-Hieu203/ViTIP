@@ -146,7 +146,7 @@ Mọi đóng góp để cải thiện dự án đều được chào đón! Vui 
 ## Tác giả
 
 - [@truongthanhma](https://github.com/truongthanhma)
-- [@hieu10-06](https://github.com/hieu10-06)
+- [@NT-Hieu203](https://github.com/NT-Hieu203)
 - [@Michael-Ngn](https://github.com/Michael-Ngn)
 - [@imxuan03](https://github.com/imxuan03)
 
