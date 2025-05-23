@@ -1,14 +1,10 @@
 # 🎼 ViTIP: AI-Powered Vietnamese Traditional Instrument Preservation System Using 3D Space
-<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <img src="image_690dc3.jpg" alt="Giao diện hệ thống - Đàn Nguyệt" style="width: 48%; max-width: 450px; height: auto; border-radius: 8px;">
-    <img src="image_698dff.png" alt="Ví dụ mô hình 3D hoặc kết quả dự đoán" style="width: 48%; max-width: 450px; height: auto; border-radius: 8px;">
-</div>
 
 ## 💡 Giới thiệu
 
 **ViTIP** (Vietnamese Traditional Instrument Preservation) là một hệ thống ứng dụng web sử dụng Trí tuệ nhân tạo để nhận diện và cung cấp thông tin chi tiết về các nhạc cụ truyền thống Việt Nam. Dự án này không chỉ tập trung vào khả năng nhận diện hình ảnh mà còn tích hợp dữ liệu Ontology và mô hình 3D tương tác, mang đến một trải nghiệm học tập và khám phá phong phú về di sản văn hóa âm nhạc Việt Nam.
 
-Hệ thống này được phát triển dựa trên nghiên cứu:
+Hệ thống này là kết quả của nghiên cứu đã được xuất bản:
 
 **[ViTIP: AI-Powered Vietnamese Traditional Instrument Preservation System Using 3D Space](https://link.springer.com/chapter/10.1007/978-3-031-60295-8_7)**
 
@@ -106,6 +102,14 @@ Xem ảnh đã được nhận diện với các hộp giới hạn và tên nh�
 Đọc thông tin chi tiết về nhạc cụ từ Ontology.
 Tương tác với mô hình 3D (nếu có): dùng chuột để xoay, kéo, và cuộn để phóng to/thu nhỏ.
 Xem các video liên quan để hiểu sâu hơn về nhạc cụ và các loại hình nghệ thuật liên quan.
+## Demo hệ thống
+
+<div style="display: flex; flex-direction: column;  justify-content: center; align-content: center; align-items: center; gap: 10px; ">
+    <img src="images/upload_image.png" alt="Giao diện hệ thống - Đàn Nguyệt" style="border-radius: 8px;">
+    <img src="images/detect_info.png" alt="Ví dụ mô hình 3D hoặc kết quả dự đoán" style=" border-radius: 8px;">
+    <img src="images/detect_info2.png" alt="Ví dụ mô hình 3D hoặc kết quả dự đoán" style=" border-radius: 8px;">
+</div>
+
 
 ## ⚙️ Tùy chỉnh & Phát triển
 
