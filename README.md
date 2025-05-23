@@ -4,7 +4,7 @@
 
 **ViTIP** (Vietnamese Traditional Instrument Preservation) là một hệ thống ứng dụng web sử dụng Trí tuệ nhân tạo để nhận diện và cung cấp thông tin chi tiết về các nhạc cụ truyền thống Việt Nam. Dự án này không chỉ tập trung vào khả năng nhận diện hình ảnh mà còn tích hợp dữ liệu Ontology và mô hình 3D tương tác, mang đến một trải nghiệm học tập và khám phá phong phú về di sản văn hóa âm nhạc Việt Nam.
 
-Hệ thống này là kết quả của nghiên cứu đã được xuất bản:
+Hệ thống này là kết quả của nghiên cứu đã được xuất bản (Repo này được làm lại với backend - Flask):
 
 **[ViTIP: AI-Powered Vietnamese Traditional Instrument Preservation System Using 3D Space](https://link.springer.com/chapter/10.1007/978-3-031-60295-8_7)**
 
