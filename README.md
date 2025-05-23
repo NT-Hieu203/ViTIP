@@ -3,6 +3,7 @@
     <img src="image_690dc3.jpg" alt="Giao diện hệ thống - Đàn Nguyệt" style="width: 48%; max-width: 450px; height: auto; border-radius: 8px;">
     <img src="image_698dff.png" alt="Ví dụ mô hình 3D hoặc kết quả dự đoán" style="width: 48%; max-width: 450px; height: auto; border-radius: 8px;">
 </div>
+
 ## 💡 Giới thiệu
 
 **ViTIP** (Vietnamese Traditional Instrument Preservation) là một hệ thống ứng dụng web sử dụng Trí tuệ nhân tạo để nhận diện và cung cấp thông tin chi tiết về các nhạc cụ truyền thống Việt Nam. Dự án này không chỉ tập trung vào khả năng nhận diện hình ảnh mà còn tích hợp dữ liệu Ontology và mô hình 3D tương tác, mang đến một trải nghiệm học tập và khám phá phong phú về di sản văn hóa âm nhạc Việt Nam.
