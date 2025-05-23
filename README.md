@@ -18,7 +18,6 @@ Hệ thống này là kết quả của nghiên cứu đã được xuất bản
 
 ## 🚀 Công nghệ sử dụng
 
-## 🚀 Công nghệ sử dụng
 
 | Lĩnh vực    | Công nghệ             | Mô tả                                      |
 | :---------- | :-------------------- | :----------------------------------------- |
@@ -33,8 +32,30 @@ Hệ thống này là kết quả của nghiên cứu đã được xuất bản
 | **Dữ liệu** | `Ontology (.owl)`     | Cơ sở tri thức về nhạc cụ truyền thống Việt Nam. |
 
 ## 📁 Cấu trúc thư mục
-
-
+web/
+├── app.py                      # Logic chính của ứng dụng Flask và các routes API
+├── utils.py                    # Các hàm tiện ích (nhận diện, truy vấn ontology)
+├── requirements.txt            # Danh sách các thư viện Python cần cài đặt
+├── .env                        # File chứa biến môi trường (nếu có)
+├── uploads/                    # Thư mục tạm lưu ảnh tải lên
+├── static/
+│   ├── predict/                # Ảnh đã được xử lý/nhận diện sẽ được lưu ở đây
+│   └── model_3D/               # Chứa các thư mục con cho từng model 3D (ví dụ: dan_bau/)
+│       ├── cong_chieng/
+│       │   └── cong_chieng.gltf
+│       ├── dan_bau/
+│       │   └── dan_bau.gltf
+│       └── ...                 # Các thư mục model 3D khác
+├── templates/
+│   └── index.html              # Giao diện người dùng chính (Frontend)
+├── model/                      # Chứa các mô hình Machine Learning và Ontology
+│   ├── model_yolo/
+│   │   └── best.pt             # Mô hình YOLOv5 đã huấn luyện
+│   ├── model_lenet/
+│   │   └── lenet_model30.h5    # Mô hình LeNet đã huấn luyện
+│   └── ontology/
+│       └── nhaccu.owl          # File Ontology chứa thông tin nhạc cụ
+└── README.md                   # File này
 
 ## 🛠️ Cài đặt và chạy dự án
 
